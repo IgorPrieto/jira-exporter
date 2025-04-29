@@ -1,9 +1,9 @@
 import argparse
-from config import load_config
-from jira_client import fetch_issues
-from extractors import extract_field, extract_issue_links, extract_links_flattened
-from validators import evaluate_relation
-from exporter import write_issues_to_csv, write_summary_csv
+from .config import load_config
+from .jira_client import fetch_issues
+from .extractors import extract_field, extract_issue_links, extract_links_flattened
+from .validators import evaluate_relation
+from .exporter import write_issues_to_csv, write_summary_csv
 from requests.auth import HTTPBasicAuth
 
 

@@ -1,5 +1,6 @@
 import csv
 import datetime
+from .extractors import extract_field, extract_issue_links
 
 def write_issues_to_csv(issues, fields, output_file, include_links, allowed_link_types, export_mode, relation_rules, extract_links_flattened, extract_issue_links):
     if include_links and export_mode == 'flattened':
