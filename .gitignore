@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Editor configs
+.vscode/
+.idea/
+*.swp
+
+# CSV and generated output
+*.csv
+relation_summary_*.csv
+
+# Jupyter and IPython
+.ipynb_checkpoints/
+
+# Test cache
+.pytest_cache/
+
+# OS / Misc
+.DS_Store
+Thumbs.db

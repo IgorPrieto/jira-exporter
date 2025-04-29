@@ -1,0 +1,33 @@
+{
+    "jira_url": "https://tusitio.atlassian.net",
+    "username": "tu.email@dominio.com",
+    "api_token": "abc123apitoken",
+    "jql": "project = DEMO ORDER BY created DESC",
+    "fields": [
+      "key",
+      "summary",
+      "status.name",
+      "issuetype.name",
+      "created"
+    ],
+    "output_file": "issues.csv",
+    "include_issue_links": true,
+    "link_types": ["Blocks", "Parent Element Is"],
+    "link_export_mode": "flattened",
+    "relation_summary_file": "summary.csv",
+    "relation_rules": [
+      {
+        "issue_type": "User Story",
+        "status": "Open",
+        "allowed_link_types": ["Parent Element Is"],
+        "allowed_target_issue_types": ["Workpackage", "Release"]
+      },
+      {
+        "issue_type": "User Story",
+        "status": "Closed",
+        "allowed_link_types": ["Parent Element Is"],
+        "allowed_target_issue_types": ["Release"]
+      }
+    ]
+  }
+  
